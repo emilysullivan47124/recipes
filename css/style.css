@@ -17,8 +17,24 @@ img {
 
 @media (min-width: 769px) {
     .container {
-        width:70%;
-        max-width: 1000px;
-        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 1 em;
+        padding-right: 1 em;
     }
+
+    .ingredients {
+        float: left;
+        width: 40%;
+    }
+
+    .directions {
+        float: right;
+        width: 60%;  
+    }
+
+
+
+
+
 }
