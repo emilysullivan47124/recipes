@@ -15,12 +15,33 @@ img {
     border-radius: 50%;
 }
 
+img.resize {
+    height: 150px;
+    width: 150px;
+}
+
 @media (min-width: 769px) {
-    .container {
+    /*Header*/
+    .main-header {
         display: inline-block;
         vertical-align: top;
         padding-left: 1 em;
-        padding-right: 1 em;
+        padding-right: 1 em; 
+    }
+
+    .img {
+        float: left;
+        padding-right: 2.5em;
+    }
+
+
+
+    /*Body*/
+    .container {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .ingredients {
