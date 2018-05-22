@@ -4,20 +4,39 @@
 }
 
 /* ---- Class Elements ---- */
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+h1:not(:first-child) {
+    font-size: 24px;
+    border-bottom: 2px solid;
+}
+
+
+/*---Let's see what happens when I remove this
+img.resize {
+    height: 150px;
+    width: 150px;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
 }
+---*/
 
-img {
-    border-radius: 50%;
-}
-
-img.resize {
-    height: 150px;
-    width: 150px;
+/*--- Combinators ---*/
+header > p {
+    font-size: x-large;
 }
 
 @media (min-width: 769px) {
