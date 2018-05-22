@@ -11,21 +11,6 @@
     padding-right: 1em;
 }
 
-.img-wrapper{
-    position: absolute;
-    top:- 10px;
-    left:-10px;
-    @include border-radius(100px);
-    background-color: $bg;
-    padding:10px;
-    z-index: 1000;
-    @include transition(all .2s);
-
-img{
-    @include border-radius(100px);
-     @include transition(all .2s);
-     width: $size;
-    }
 
 @media (min-width: 769px) {
     .container {
