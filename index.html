@@ -26,7 +26,8 @@
                       <p>The perfect starter to your meal</p>
 
                       <!--Subsection will have the recipes-->
-                      <div class="sub-section">
+                      <button type="button" id="app-button" onclick="appClicker()">See Appetizer Recipes</button>
+                      <div class="sub-section" id="app-showhide">
                         <div class="img">
                             <img class="resize" src="/img/Nacho_Layer_Holder.jpg" alt="Holder picture for Nacho Layer Salad">
                         </div>
@@ -38,8 +39,8 @@
                         </div>
 
                         <!-- Third layer will have ingredients and directions-->
-
-                        <div class="container">
+                        <button type="button" id="nacho-recipe-button" onclick="nachoClicker()">Show Recipe</button>
+                        <div class="container" id="nacho-recipe-showhide">
                             <div class="ingredients col">
                                 <h2>Ingredients</h2>
                                 <ul>
@@ -52,6 +53,7 @@
                                 </ul>
                             </div>
                             <div class="directions col">
+                                <h2>Directions</h2>
                                 <p>Possim eirmod ocurreret cum id, sint persius posidonium in nec. Ut meis zril aperiri mei, principes maiestatis mnesarchum ius in, sit ut affert principes. </p>
                                 <p>Ex sale sensibus imperdiet mea, case paulo dolor ius an, sententiae voluptatibus vix ne. Omnes euripidis argumentum nec id, vim iudicabit aliquando voluptatum te. </p>
                                 <p>Cu hinc iudicabit mea, tollit propriae percipitur ius ad. Tollit delicatissimi sea ne.</p>
@@ -94,5 +96,6 @@
         <footer>
 
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -3,6 +3,17 @@
     box-sizing: border-box;
 }
 
+/* ---- ID Elements ---- */
+#app-showhide {
+    display: none;
+}
+
+#nacho-recipe-showhide{
+    display: none;
+}
+
+
+
 /* ---- Class Elements ---- */
 
 img {
