@@ -27,3 +27,33 @@ function nachoClicker(){
         nachoRecipeShowHide.style.display ='none';
     }
 }
+
+/*Shows-Hides the Stuffed Shrimp Recipe*/
+function stuffedShrimpClicker(){
+
+    var stuffedShrimpRecipeButton = document.getElementById('stuffed-shrimp-recipe-button');
+    var stuffedShrimpRecipeShowHide = document.getElementById('stuffed-shrimp-recipe-showhide');
+
+    if (stuffedShrimpRecipeShowHide.style.display === 'none') {
+        stuffedShrimpRecipeButton.textContent ='Hide Recipe';
+        stuffedShrimpRecipeShowHide.style.display ='block';
+    } else { 
+        stuffedShrimpRecipeButton.textContent ='Show Recipe';
+        stuffedShrimpRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Crostini Recipe*/
+function crostiniClicker(){
+
+    var crostiniRecipeButton = document.getElementById('crostini-recipe-button');
+    var crostiniRecipeShowHide = document.getElementById('crostini-recipe-showhide');
+
+    if (crostiniRecipeShowHide.style.display === 'none') {
+        crostiniRecipeButton.textContent ='Hide Recipe';
+        crostiniRecipeShowHide.style.display ='block';
+    } else { 
+        crostiniRecipeButton.textContent ='Show Recipe';
+        crostiniRecipeShowHide.style.display ='none';
+    }
+}

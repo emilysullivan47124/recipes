@@ -8,7 +8,9 @@
     display: none;
 }
 
-#nacho-recipe-showhide{
+#nacho-recipe-showhide,
+#stuffed-shrimp-recipe-showhide,
+#crostini-recipe-showhide {
     display: none;
 }
 
