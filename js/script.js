@@ -58,13 +58,3 @@ function crostiniClicker(){
     }
 }
 
-/* Add ingredients to shopping list */
-// var addShopping = document.querySelectorAll('input.add-shopping');
-// var shoppingItem = document.querySelectorAll('.shopping-item')
-// shoppingItem.addEventListener('change', () => {
-//     if (shoppingItem.checked) {
-//         let shoppingList = document.querySelector(.shoppingList)
-//         let li = document.createElement('li');
-//         li.textContent=shoppingItem.value;
-//     }
-// });

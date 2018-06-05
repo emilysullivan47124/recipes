@@ -13,173 +13,416 @@
 
         <!-- MAIN -->
         <main>   
-            <div class="clearfix"></div>
-            <div class="wysiwyg">
-                <div class="article-wrapper">
+
+            <!-- This section will have the Appetizers-->
+            <section>
+                <div class="main-layer">
+                    <img class="resize" src="img/black-background-boiled-egg-boiled-eggs-824635.jpg" alt="Egg Halves on Toast" />
+                
+                    <h1>Appetizers</h1>
+                    <p>The perfect starter to your meal</p>
+
+                    <!--Subsection will show/hide the appetizer recipes-->
+                    <button type="button" id="app-button" onclick="appClicker()">See Appetizer Recipes</button>
+                    <div class="sub-section" id="app-showhide">
                     
-                    <!-- This section will have the Appetizers-->
-                    <article>
-                        <div class="main-layer">
-                          <img class="resize" src="img/black-background-boiled-egg-boiled-eggs-824635.jpg" alt="Egg Halves on Toast" />
-                        </div>
-                      <h1>Appetizers</h1>
-                      <p>The perfect starter to your meal</p>
-
-                      <!--Subsection will show/hide the appetizer recipes-->
-                      <button type="button" id="app-button" onclick="appClicker()">See Appetizer Recipes</button>
-                      <div class="sub-section" id="app-showhide">
-                        
                         <!--Recipe 1-->
-                        <div class="img">
-                            <img class="resize" src="/img/Nacho_Layer_Holder.jpg" alt="Holder picture for Nacho Layer Salad">
-                        </div>
-                        <div class="description">
-                            <h1>Nacho Layer Dip</h1>
-                            <p>All of your favorite nacho toppings in a dippable form.  The perfect appetizer for a pitch-in or cook-out.  Vegetarian friendly with the right refried beans.</p>
-                        </div>
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="/img/Nacho_Layer_Holder.jpg" alt="Holder picture for Nacho Layer Salad">
+                            </div>
+                            <div class="description">
+                                <h1>Nacho Layer Dip</h1>
+                                <p>All of your favorite nacho toppings in a dippable form.  The perfect appetizer for a pitch-in or cook-out.  Vegetarian friendly with the right refried beans.</p>
+                            </div>
 
-                        <!-- Show/Hide ingredients and directions-->
-                        <button type="button" id="nacho-recipe-button" onclick="nachoClicker()">Show Recipe</button>
-                        <div class="container" id="nacho-recipe-showhide">
-                            <div class="ingredients col">
-                                <h2>Ingredients</h2>
-                                <h4>Check to add ingredient to shopping list</h4>
-                                <ul>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 (15 ounce) can spicy refried beans</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 cup sour cream</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2/3 cup mayonnaise</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 (1 ounce) package taco seasoning mix</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">8 ounces salsa</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 cups shredded lettuce</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1/2 cup diced red onion</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 cups shredded cheddar cheese</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 bunch green onions, chopped</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 cups tomatoes, chopped</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">3 tablespoons chopped fresh cilantro</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">Tortilla chips for serving</li>
-                                </ul>
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="nacho-recipe-button" onclick="nachoClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="nacho-recipe-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>1 (15 ounce) can spicy refried beans</li>
+                                        <li>1 cup sour cream</li>
+                                        <li>2/3 cup mayonnaise</li>
+                                        <li>1 (1 ounce) package taco seasoning mix</li>
+                                        <li>8 ounces salsa</li>
+                                        <li>2 cups shredded lettuce</li>
+                                        <li>1/2 cup diced red onion</li>
+                                        <li>2 cups shredded cheddar cheese</li>
+                                        <li>1 bunch green onions, chopped</li>
+                                        <li>2 cups tomatoes, chopped</li>
+                                        <li>3 tablespoons chopped fresh cilantro</li>
+                                        <li>Tortilla chips for serving</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>In a 13 x 9-inch glass serving dish, spread the refried beans. </p>
+                                    <p>Mix together the sour cream, mayonnaise and seasoning mix. Spread this on top of the beans.</p>
+                                    <p>Put on a layer of the salsa, then the shredded lettuce, then the red onion.</p>
+                                    <p>Mix together the shredded cheese, green onions, and chopped tomatoes.  Sprinkle this on top.</p>
+                                    <p>Garnish with the chopped fresh cilantro.</p>
+                                    <p>Cover and chill for up to 12 hours.  Serve with tortilla chips.</p>
+                                </div>
                             </div>
-                            <div class="directions col">
-                                <h2>Directions</h2>
-                                <p>In a 13 x 9-inch glass serving dish, spread the refried beans. </p>
-                                <p>Mix together the sour cream, mayonnaise and seasoning mix. Spread this on top of the beans.</p>
-                                <p>Put on a layer of the salsa, then the shredded lettuce, then the red onion.</p>
-                                <p>Mix together the shredded cheese, green onions, and chopped tomatoes.  Sprinkle this on top.</p>
-                                <p>Garnish with the chopped fresh cilantro.</p>
-                                <p>Cover and chill for up to 12 hours.  Serve with tortilla chips.</p>
-                            </div>
-                        </div>
+                        </article>
 
-                        <!--Recipe 2-->
-                        <div class="img">
-                            <img class="resize" src="/img/bright-cactuses-close-up-908299.jpg" alt="Cacti and Shrimp Artwork">
-                        </div>
-                        <div class="description">
-                            <h1>Baked Stuffed Shrimp</h1>
-                            <p>This recipe comes from my best friend's childhood home in Rhode Island.  </p>
-                        </div>
+                        <!-- Recipe 2 -->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="/img/bright-cactuses-close-up-908299.jpg" alt="Cacti and Shrimp Artwork">
+                            </div>
+                            <div class="description">
+                                <h1>Baked Stuffed Shrimp</h1>
+                                <p>This recipe comes from my best friend's childhood home in Rhode Island.  </p>
+                            </div>
 
-                        <!-- Show/Hide ingredients and directions-->
-                        <button type="button" id="stuffed-shrimp-recipe-button" onclick="stuffedShrimpClicker()">Show Recipe</button>
-                        <div class="container" id="stuffed-shrimp-recipe-showhide">
-                            <div class="ingredients col">
-                                <h2>Ingredients</h2>
-                                <h4>Check to add ingredient to shopping list</h4>
-                                <ul>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 sleeve Ritz crackers</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 can crab meat</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 teaspoon paprika</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 teaspoon garlic powder</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 teaspoon onion powder</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 teaspoon Italian seasoning</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">Mayonnaise</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 pound jumbo shrimp, tails on</li>
-                                </ul>
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="stuffed-shrimp-recipe-button" onclick="stuffedShrimpClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="stuffed-shrimp-recipe-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>1 sleeve Ritz crackers</li>
+                                        <li>1 can crab meat</li>
+                                        <li>2 teaspoon paprika</li>
+                                        <li>2 teaspoon garlic powder</li>
+                                        <li>2 teaspoon onion powder</li>
+                                        <li>2 teaspoon Italian seasoning</li>
+                                        <li>Mayonnaise</li>
+                                        <li>1 pound jumbo shrimp, tails on</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Crush up crackers and pour into a medium bowl.  Stir in spices, and mix thoroughly.</p>
+                                    <p>Open crab meat, and pour juices over cracker crumbs.  Pick though meat, discarding any cartilage.  Add meat to bowl.</p>
+                                    <p>Add mayo one spoonful at a time, until mixture just sticks together.  Taste, and adjust seasoning as needed.</p>
+                                    <p>Line cookie sheet with aluminum foil.</p>
+                                    <p>Butterfly shrimp and place cut-side down on cookie sheet.</p>
+                                    <p>Top with ~1 tablespoon of crab mixture, and gently press tail into top of crab.  Repeat with remaining shrimp.</p>
+                                    <p>Bake in 350 degree oven for 10 minutes, or until shrimp is cooked.</p>
+                                </div>
                             </div>
-                            <div class="directions col">
-                                <h2>Directions</h2>
-                                <p>Crush up crackers and pour into a medium bowl.  Stir in spices, and mix thoroughly.</p>
-                                <p>Open crab meat, and pour juices over cracker crumbs.  Pick though meat, discarding any cartilage.  Add meat to bowl.</p>
-                                <p>Add mayo one spoonful at a time, until mixture just sticks together.  Taste, and adjust seasoning as needed.</p>
-                                <p>Line cookie sheet with aluminum foil.</p>
-                                <p>Butterfly shrimp and place cut-side down on cookie sheet.</p>
-                                <p>Top with ~1 tablespoon of crab mixture, and gently press tail into top of crab.  Repeat with remaining shrimp.</p>
-                                <p>Bake in 350 degree oven for 10 minutes, or until shrimp is cooked.</p>
-                            </div>
-                        </div>
+                        </article>
 
                         <!--Recipe 3-->
-                        <div class="img">
-                            <img class="resize" src="/img/bulb-onion-close-up-food-47051.jpg" alt="Pile of Red Onions">
-                        </div>
-                        <div class="description">
-                            <h1>Carmelized Red Onion and Goat Cheese Crostini</h1>
-                            <p>Crusty bread, creamy cheese, melt-in-your-mouth caramelized onion.  What's not to love?</p>
-                        </div>
-
-                        <!-- Show/Hide ingredients and directions-->
-                        <button type="button" id="crostini-recipe-button" onclick="crostiniClicker()">Show Recipe</button>
-                        <div class="container" id="crostini-recipe-showhide">
-                            <div class="ingredients col">
-                                <h2>Ingredients</h2>
-                                <h4>Check to add ingredient to shopping list</h4>
-                                <ul>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">4 tablespoons olive oil, divided</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 long loaf French bread, sliced into rounds</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 medium red onion, thinly sliced</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">1 (5 ounce) log spreadable goat cheese</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">2 tablespoons Balsamic vinegar</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">Salt and Pepper to taste</li>
-                                    <li class="shopping-item"><input type="checkbox" class="add-shopping">Fresh thyme sprigs for garnish</li>
-                                </ul>
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="/img/bulb-onion-close-up-food-47051.jpg" alt="Pile of Red Onions">
                             </div>
-                            <div class="directions col">
-                                <h2>Directions</h2>
-                                <p>Heat 2 tablespoons olive oil over medium heat in a large skillet.  Add red onion and sprinkle with salt and pepper.  Saute, stirring frequently, until caramelized.  Be patient, as this can take a half hour.  Add Balsamic vinegar, and cook an additiona 5 minutes.</p>
-                                <p>Preheat oven to 350 degrees.  Place bread slices on a greased baking sheet, and brush both sides lightly with olive oil.  Bake for 15-20 minutes, turning halfway through the cooking time.</p>
-                                <p>Let the crostinis cool for a few minutes, and then spread each one with a thin layer of goat cheese.  Top with a little dollop of the caramelized onion, and garnish with the fresh thyme if desired.</p>
+                            <div class="description">
+                                <h1>Carmelized Red Onion and Goat Cheese Crostini</h1>
+                                <p>Crusty bread, creamy cheese, melt-in-your-mouth caramelized onion.  What's not to love?</p>
                             </div>
-                        </div>
 
-                      </div>
-                    </article>
-
-                    <!-- This section will have the Main Courses-->
-                    <article>
-                        <div class="main-layer">
-                            <img class="resize" src="img/dinner-dish-fish-36768.jpg" alt="Fish on a White Plate" />
-                        </div>
-                        <h1>Main Courses</h1>
-                        <p>The stars of the show</p>
-                    </article>
-
-                    <!-- This section will have the Side Dishes-->
-                    <article>
-                        <div class="main-layer">
-                            <img class="resize" src="img/agriculture-basket-close-up-219794.jpg" alt="A basket of vegetables" />
-                        </div>
-                        <h1>Side Dishes</h1>
-                        <p>Eating your vegetables can be fun</p>
-                    </article>
-
-                    <!-- This section will have the Desserts-->
-                    <article>
-                        <div class="main-layer">
-                            <img class="resize" src="img/berries-blackberries-close-up-434295.jpg" alt="Blackberries on top of a smoothie" />
-                        </div>
-                        <h1>Desserts</h1>
-                        <p>What you are really craving</p>
-                    </article>
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="crostini-recipe-button" onclick="crostiniClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="crostini-recipe-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>4 tablespoons olive oil, divided</li>
+                                        <li>1 long loaf French bread, sliced into rounds</li>
+                                        <li>1 medium red onion, thinly sliced</li>
+                                        <li>1 (5 ounce) log spreadable goat cheese</li>
+                                        <li>2 tablespoons Balsamic vinegar</li>
+                                        <li>Salt and Pepper to taste</li>
+                                        <li>Fresh thyme sprigs for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Heat 2 tablespoons olive oil over medium heat in a large skillet.  Add red onion and sprinkle with salt and pepper.  Saute, stirring frequently, until caramelized.  Be patient, as this can take a half hour.  Add Balsamic vinegar, and cook an additiona 5 minutes.</p>
+                                    <p>Preheat oven to 350 degrees.  Place bread slices on a greased baking sheet, and brush both sides lightly with olive oil.  Bake for 15-20 minutes, turning halfway through the cooking time.</p>
+                                    <p>Let the crostinis cool for a few minutes, and then spread each one with a thin layer of goat cheese.  Top with a little dollop of the caramelized onion, and garnish with the fresh thyme if desired.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- This section will have the Main Courses-->
+            <section>
+                <div class="main-layer">
+                    <img class="resize" src="img/dinner-dish-fish-36768.jpg" alt="Fish on a White Plate" />
+                    <h1>Main Courses</h1>
+                    <p>The stars of the show</p>
+                    <!--Subsection will show/hide the main course recipes-->
+                    <button type="button" id="main-course-button" onclick="mainCourseClicker()">See Main Course Recipes</button>
+                    <div class="sub-section" id="main-course-showhide">
+                    
+                        <!--Recipe A-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe A alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe A Title</h1>
+                                <p>Recipe A Description.</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-a-button" onclick="recipeAClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-a-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe A Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe A Directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Recipe B -->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe B alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe B Title</h1>
+                                <p>Recipe B Description</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-b-button" onclick="recipeBClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-b-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe B Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe B directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--Recipe C-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe C alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe C Title</h1>
+                                <p>Description of Recipe C</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-c-button" onclick="recipeCClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-c-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Put ingredients here</li>
+
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Type directions here</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This section will have the Side Dishes-->
+            <section>
+                <div class="main-layer">
+                    <img class="resize" src="img/agriculture-basket-close-up-219794.jpg" alt="A basket of vegetables" />
+                    <h1>Side Dishes</h1>
+                    <p>Eating your vegetables can be fun</p>
+                    <!--Subsection will show/hide the side dishes recipes-->
+                    <button type="button" id="side-dishes-button" onclick="sideDishesClicker()">See Side Dishes Recipes</button>
+                    <div class="sub-section" id="side-dishes-showhide">
+                    
+                        <!--Recipe L-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe L alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe L Title</h1>
+                                <p>Recipe L Description.</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-l-button" onclick="recipelClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-l-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe L Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe L Directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Recipe M -->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe M alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe M Title</h1>
+                                <p>Recipe M Description</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-m-button" onclick="recipeMClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-m-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe M Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe M directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--Recipe N-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe N alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe N Title</h1>
+                                <p>Description of Recipe N</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-n-button" onclick="recipeNClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-n-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Put ingredients here</li>
+
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Type directions here</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This section will have the Desserts-->
+            <section>
+                <div class="main-layer">
+                    <img class="resize" src="img/berries-blackberries-close-up-434295.jpg" alt="Blackberries on top of a smoothie" />
+                    <h1>Desserts</h1>
+                    <p>What you are really craving</p>
+                    <!--Subsection will show/hide the dessert recipes-->
+                    <button type="button" id="dessert-button" onclick="dessertClicker()">See Dessert Recipes</button>
+                    <div class="sub-section" id="dessert-showhide">
+                    
+                        <!--Recipe X-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe X alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe X Title</h1>
+                                <p>Recipe X Description.</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-x-button" onclick="recipexClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-x-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe X Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe X Directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Recipe Y -->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe Y alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe Y Title</h1>
+                                <p>Recipe Y Description</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-y-button" onclick="recipeYClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-y-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Recipe Y Ingredients</li>
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Recipe Y directions</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--Recipe Z-->
+                        <article class="recipe">
+                            <div class="img">
+                                <img class="resize" src="#" alt="Recipe Z alt">
+                            </div>
+                            <div class="description">
+                                <h1>Recipe Z Title</h1>
+                                <p>Description of Recipe Z</p>
+                            </div>
+
+                            <!-- Show/Hide ingredients and directions-->
+                            <button type="button" id="recipe-z-button" onclick="recipeZClicker()">Show Recipe</button>
+                            <div class="container clearfix" id="recipe-z-showhide">
+                                <div class="ingredients col">
+                                    <h2>Ingredients</h2>
+                                    <ul>
+                                        <li>Put ingredients here</li>
+
+                                    </ul>
+                                </div>
+                                <div class="directions col">
+                                    <h2>Directions</h2>
+                                    <p>Type directions here</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER -->
         <footer >
-            <h1>Shopping List</h1>
-            <ul class="shopping-list">
-                <li></li>
-            </ul>
 
         </footer>
         <script src="js/script.js"></script>

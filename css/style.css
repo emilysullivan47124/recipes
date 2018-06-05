@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 /* ---- ID Elements ---- */
 #app-showhide {
     display: none;
@@ -18,14 +19,55 @@
 
 /* ---- Class Elements ---- */
 
-img {
+
+.main-header {
+    background-color: red;
+}
+
+.resize {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-
+    margin-top: 1.5em;
 }
 
+.main-layer {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: green;
+}
 
+.sub-section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: orange;
+}
+
+.recipe {
+padding-top: 1em;
+padding-bottom: 1em;
+background-color: purple;
+}
+
+.container {
+    padding-top: 1em;
+    background-color: crimson;
+}
+
+.col {
+    background-color: darkgoldenrod;
+    padding-bottom: 50px;
+}
+
+.ingredients {
+    border: solid red 1px;
+}
+
+.directions {
+    border: solid black 1px;
+}
 
 h1:not(:first-child) {
     font-size: 24px;
@@ -33,25 +75,14 @@ h1:not(:first-child) {
 }
 
 
-/*---Let's see what happens when I remove this
-img.resize {
-    height: 150px;
-    width: 150px;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
-    padding-left: 1em;
-    padding-right: 1em;
-}
----*/
 
 /*--- Combinators ---*/
 header > p {
     font-size: x-large;
 }
 
+
+/*--- Media Queries ---*/
 @media (min-width: 769px) {
     /*Header*/
     .main-header {
@@ -69,11 +100,19 @@ header > p {
 
 
     /*Body*/
+    .clearfix :: after {
+        content: " ";
+        display: table:
+        clear: both;
+    }
+
+    .main-layer,
     .container {
         display: inline-block;
         vertical-align: top;
         padding-left: 1em;
         padding-right: 1em;
+        overflow: auto;
     }
 
     .ingredients {
