@@ -1,3 +1,5 @@
+/*Main Sections*/
+
 /*Shows-Hides the Appetizer*/
 function appClicker(){
 
@@ -12,6 +14,38 @@ function appClicker(){
         appShowHide.style.display ='none';
     }
 }
+
+/*Shows-Hides the Main Courses*/
+function mainCourseClicker(){
+
+    var mainCourseButton = document.getElementById('main-course-button');
+    var mainCourseShowHide = document.getElementById('main-course-showhide');
+
+    if (mainCourseShowHide.style.display === 'none') {
+        mainCourseButton.textContent ='Hide Main Course Recipes';
+        mainCourseShowHide.style.display ='block';
+    } else { 
+        mainCourseButton.textContent ='See Main Course Recipes';
+        mainCourseShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Side Dishes*/
+function sideDishesClicker(){
+
+    var sideDishesButton = document.getElementById('side-dishes-button');
+    var sideDishesShowHide = document.getElementById('side-dishes-showhide');
+
+    if (sideDishesShowHide.style.display === 'none') {
+        sideDishesButton.textContent ='Hide Side Dishes Recipes';
+        sideDishesShowHide.style.display ='block';
+    } else { 
+        sideDishesButton.textContent ='See Side Dishes Recipes';
+        sideDishesShowHide.style.display ='none';
+    }
+}
+
+/* Recipes */
 
 /*Shows-Hides the Nacho Recipe*/
 function nachoClicker(){
@@ -55,6 +89,67 @@ function crostiniClicker(){
     } else { 
         crostiniRecipeButton.textContent ='Show Recipe';
         crostiniRecipeShowHide.style.display ='none';
+    }
+}
+
+
+/*Shows-Hides the Pork Marsala Recipe*/
+function porkMarsalaClicker(){
+
+    var porkMarsalaRecipeButton = document.getElementById('pork-marsala-recipe-button');
+    var porkMarsalaRecipeShowHide = document.getElementById('pork-marsala-recipe-showhide');
+
+    if (porkMarsalaRecipeShowHide.style.display === 'none') {
+        porkMarsalaRecipeButton.textContent ='Hide Recipe';
+        porkMarsalaRecipeShowHide.style.display ='block';
+    } else { 
+        porkMarsalaRecipeButton.textContent ='Show Recipe';
+        porkMarsalaRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Savory Chicken Recipe*/
+function savoryChickenClicker(){
+
+    var savoryChickenRecipeButton = document.getElementById('savory-chicken-recipe-button');
+    var savoryChickenRecipeShowHide = document.getElementById('savory-chicken-recipe-showhide');
+
+    if (savoryChickenRecipeShowHide.style.display === 'none') {
+        savoryChickenRecipeButton.textContent ='Hide Recipe';
+        savoryChickenRecipeShowHide.style.display ='block';
+    } else { 
+        savoryChickenRecipeButton.textContent ='Show Recipe';
+        savoryChickenRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Indiana Cucumber Salad Recipe*/
+function cucumberSaladClicker(){
+
+    var cucumberSaladRecipeButton = document.getElementById('cucumber-salad-recipe-button');
+    var cucumberSaladRecipeShowHide = document.getElementById('cucumber-salad-recipe-showhide');
+
+    if (cucumberSaladRecipeShowHide.style.display === 'none') {
+        cucumberSaladRecipeButton.textContent ='Hide Recipe';
+        cucumberSaladRecipeShowHide.style.display ='block';
+    } else { 
+        cucumberSaladRecipeButton.textContent ='Show Recipe';
+        cucumberSaladRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Asparagus with Lemon and Goat Cheese Recipe*/
+function asparagusLemonRecipeClicker(){
+
+    var asparagusLemonRecipeButton = document.getElementById('asparagus-lemon-recipe-button');
+    var asparagusLemonRecipeShowHide = document.getElementById('asparagus-lemon-recipe-showhide');
+
+    if (asparagusLemonRecipeShowHide.style.display === 'none') {
+        asparagusLemonRecipeButton.textContent ='Hide Recipe';
+        asparagusLemonRecipeShowHide.style.display ='block';
+    } else { 
+        asparagusLemonRecipeButton.textContent ='Show Recipe';
+        asparagusLemonRecipeShowHide.style.display ='none';
     }
 }
 
