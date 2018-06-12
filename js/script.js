@@ -45,6 +45,21 @@ function sideDishesClicker(){
     }
 }
 
+/*Shows-Hides the Desserts*/
+function dessertClicker(){
+
+    var dessertButton = document.getElementById('dessert-button');
+    var dessertShowHide = document.getElementById('dessert-showhide');
+
+    if (dessertShowHide.style.display === 'none') {
+        dessertButton.textContent ='Hide Dessert Recipes';
+        dessertShowHide.style.display ='block';
+    } else { 
+        dessertButton.textContent ='See Dessert Recipes';
+        dessertShowHide.style.display ='none';
+    }
+}
+
 /* Recipes */
 
 /*Shows-Hides the Nacho Recipe*/
@@ -152,4 +167,65 @@ function asparagusLemonRecipeClicker(){
         asparagusLemonRecipeShowHide.style.display ='none';
     }
 }
+
+/*Shows-Hides the Grilled Carrot Recipe*/
+function grilledCarrotRecipeClicker(){
+
+    var grilledCarrotRecipeButton = document.getElementById('grilled-carrot-recipe-button');
+    var grilledCarrotRecipeShowHide = document.getElementById('grilled-carrot-recipe-showhide');
+
+    if (grilledCarrotRecipeShowHide.style.display === 'none') {
+        grilledCarrotRecipeButton.textContent ='Hide Recipe';
+        grilledCarrotRecipeShowHide.style.display ='block';
+    } else { 
+        grilledCarrotRecipeButton.textContent ='Show Recipe';
+        grilledCarrotRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Grilled Carrot Recipe*/
+function pumpkinSpiceRecipeClicker(){
+
+    var pumpkinSpiceRecipeButton = document.getElementById('pumpkin-spice-recipe-button');
+    var pumpkinSpiceRecipeShowHide = document.getElementById('pumpkin-spice-recipe-showhide');
+
+    if (pumpkinSpiceRecipeShowHide.style.display === 'none') {
+        pumpkinSpiceRecipeButton.textContent ='Hide Recipe';
+        pumpkinSpiceRecipeShowHide.style.display ='block';
+    } else { 
+        pumpkinSpiceRecipeButton.textContent ='Show Recipe';
+        pumpkinSpiceRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Cinnamon Buttercream Frosting Recipe*/
+function cinnamonFrostingRecipeClicker(){
+
+    var cinnamonFrostingRecipeButton = document.getElementById('cinnamon-frosting-recipe-button');
+    var cinnamonFrostingRecipeShowHide = document.getElementById('cinnamon-frosting-recipe-showhide');
+
+    if (cinnamonFrostingRecipeShowHide.style.display === 'none') {
+        cinnamonFrostingRecipeButton.textContent ='Hide Recipe';
+        cinnamonFrostingRecipeShowHide.style.display ='block';
+    } else { 
+        cinnamonFrostingRecipeButton.textContent ='Show Recipe';
+        cinnamonFrostingRecipeShowHide.style.display ='none';
+    }
+}
+
+/*Shows-Hides the Brownies Recipe*/
+function browniesRecipeClicker(){
+
+    var browniesRecipeButton = document.getElementById('brownies-recipe-button');
+    var browniesRecipeShowHide = document.getElementById('brownies-recipe-showhide');
+
+    if (browniesRecipeShowHide.style.display === 'none') {
+        browniesRecipeButton.textContent ='Hide Recipe';
+        browniesRecipeShowHide.style.display ='block';
+    } else { 
+        browniesRecipeButton.textContent ='Show Recipe';
+        browniesRecipeShowHide.style.display ='none';
+    }
+}
+
 

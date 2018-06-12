@@ -7,7 +7,8 @@
 /* ---- ID Elements ---- */
 #app-showhide,
 #main-course-showhide,
-#side-dishes-showhide {
+#side-dishes-showhide,
+#dessert-showhide {
     display: none;
 }
 
@@ -18,7 +19,11 @@
 #savory-chicken-recipe-showhide
 #thai-coconut-shrimp-recipe-showhide,
 #cucumber-salad-recipe-showhide,
-#asparagus-lemon-recipe-showhide {
+#asparagus-lemon-recipe-showhide, 
+#grilled-carrot-recipe-showhide,
+#pumpkin-spice-recipe-showhide,
+#cinnamon-frosting-recipe-showhide,
+#brownies-recipe-showhide {
     display: none;
 }
 
