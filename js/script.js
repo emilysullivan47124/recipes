@@ -123,6 +123,21 @@ function porkMarsalaClicker(){
     }
 }
 
+/*Shows-Hides the Thai Coconut Shrimp Recipe*/
+function thaiCoconutShrimpClicker(){
+
+    var thaiCoconutShrimpRecipeButton = document.getElementById('thai-coconut-shrimp-recipe-button');
+    var thaiCoconutShrimpRecipeShowHide = document.getElementById('thai-coconut-shrimp-recipe-showhide');
+
+    if (thaiCoconutShrimpRecipeShowHide.style.display === 'none') {
+        thaiCoconutShrimpRecipeButton.textContent ='Hide Recipe';
+        thaiCoconutShrimpRecipeShowHide.style.display ='block';
+    } else { 
+        thaiCoconutShrimpRecipeButton.textContent ='Show Recipe';
+        thaiCoconutShrimpRecipeShowHide.style.display ='none';
+    }
+}
+
 /*Shows-Hides the Savory Chicken Recipe*/
 function savoryChickenClicker(){
 
