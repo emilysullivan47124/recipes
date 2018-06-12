@@ -1,9 +1,12 @@
-/* ---- Universal ---- */
+/* ---- Universal and element ---- */
 * {
     box-sizing: border-box;
 }
 
-
+button {
+    padding: .5em;
+    margin: .5em;
+}
 /* ---- ID Elements ---- */
 #app-showhide,
 #main-course-showhide,
@@ -33,7 +36,8 @@
 
 
 .main-header {
-    background-color: red;
+    background-color: #e86e51;
+    width: 100%;
 }
 
 .resize {
@@ -48,37 +52,30 @@
     vertical-align: top;
     padding: 1em;
     margin-top: 1em;
-    background-color: green;
+    background-color:#07b890;
+    width: 100%;
 }
 
 .sub-section {
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: orange;
+    background-color: #81dd88;
 }
 
 .recipe {
 padding-top: 1em;
 padding-bottom: 1em;
-background-color: purple;
+background-color: #81dd88;
 }
 
 .container {
     padding-top: 1em;
-    background-color: crimson;
+    background-color: #fbe66a;
 }
 
 .col {
-    background-color: darkgoldenrod;
+    background-color: #fbe66a;
     padding-bottom: 50px;
-}
-
-.ingredients {
-    border: solid red 1px;
-}
-
-.directions {
-    border: solid black 1px;
 }
 
 h1:not(:first-child) {
@@ -114,7 +111,7 @@ header > p {
     /*Body*/
     .clearfix :: after {
         content: " ";
-        display: table:
+        display: table;
         clear: both;
     }
 

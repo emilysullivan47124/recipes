@@ -63,6 +63,7 @@ function dessertClicker(){
 /* Recipes */
 
 /*Shows-Hides the Nacho Recipe*/
+
 function nachoClicker(){
 
     var nachoRecipeButton = document.getElementById('nacho-recipe-button');
