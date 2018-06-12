@@ -6,6 +6,7 @@
 button {
     padding: .5em;
     margin: .5em;
+    background-color: #d3dcd9
 }
 /* ---- ID Elements ---- */
 #app-showhide,
