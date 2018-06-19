@@ -31,7 +31,10 @@ button {
     display: none;
 }
 
-
+#topnav {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ---- Class Elements ---- */
 
