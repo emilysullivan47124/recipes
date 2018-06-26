@@ -31,10 +31,17 @@ button {
     display: none;
 }
 
-#topnav {
+#topnav,
+#bottomnav {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
+
+#bottomnav {
+    background-color: #d3dcd9;
+}
+
 
 /* ---- Class Elements ---- */
 
@@ -87,12 +94,28 @@ h1:not(:first-child) {
     border-bottom: 2px solid;
 }
 
+.nav {
+    margin: 1em;
+    padding: 1em;
+    background-color: #d3dcd9;
+    box-shadow: 
+        inset 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0,0,0,0.3),
+        inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+
+.b-nav {
+    padding: 1em;
+    background-color: #d3dcd9;
+}
+
 
 
 /*--- Combinators ---*/
 header > p {
     font-size: x-large;
 }
+
 
 
 /*--- Media Queries ---*/
@@ -111,6 +134,11 @@ header > p {
     }
 
 
+
+    #topnav,
+    #bottomnav {
+        flex-direction: row;
+    }
 
     /*Body*/
     .clearfix :: after {
