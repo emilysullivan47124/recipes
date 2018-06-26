@@ -15,17 +15,6 @@ function appClicker(){
     }
 }
 
-var $('#app-showhide');
-var $('#app-button');
-$('#app-button').click(function) {
-    if $('#app-showhide'.style.display === 'none') {
-        $('#app-button'.textContent) = 'Hide Appetizer Recipe';
-        $('#app-showhide').show();
-    } else {
-        $('#app-button').textContent = 'See Appetizer Recipe';
-        $('app-showhide').hide;
-    }
-}
 
 /*Shows-Hides the Main Courses*/
 function mainCourseClicker(){
