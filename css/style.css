@@ -132,7 +132,7 @@ header > p {
 @media (min-width: 769px) {
     /*Header*/
     .main-header {
-        /* display: inline-block; */
+        display: inline-block; 
         vertical-align: top;
         padding-left: 1 em;
         padding-right: 1 em; 
