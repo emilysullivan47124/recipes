@@ -2,9 +2,10 @@
 
 /*Shows-Hides the Appetizer*/
 function appClicker(){
-
     var appButton = document.getElementById('app-button');
     var appShowHide = document.getElementById('app-showhide');
+
+    appShowHide.style.display = 'none';
 
     if (appShowHide.style.display === 'none') {
         appButton.textContent ='Hide Appetizer Recipes';
@@ -22,6 +23,8 @@ function mainCourseClicker(){
     var mainCourseButton = document.getElementById('main-course-button');
     var mainCourseShowHide = document.getElementById('main-course-showhide');
 
+    mainCourseShowHide.style.display = 'none';
+
     if (mainCourseShowHide.style.display === 'none') {
         mainCourseButton.textContent ='Hide Main Course Recipes';
         mainCourseShowHide.style.display ='block';
@@ -37,6 +40,8 @@ function sideDishesClicker(){
     var sideDishesButton = document.getElementById('side-dishes-button');
     var sideDishesShowHide = document.getElementById('side-dishes-showhide');
 
+    sideDishesShowHide.style.display = 'none';
+
     if (sideDishesShowHide.style.display === 'none') {
         sideDishesButton.textContent ='Hide Side Dishes Recipes';
         sideDishesShowHide.style.display ='block';
@@ -51,6 +56,8 @@ function dessertClicker(){
 
     var dessertButton = document.getElementById('dessert-button');
     var dessertShowHide = document.getElementById('dessert-showhide');
+
+    dessertShowHide.style.display = 'none';
 
     if (dessertShowHide.style.display === 'none') {
         dessertButton.textContent ='Hide Dessert Recipes';
@@ -70,6 +77,8 @@ function nachoClicker(){
     var nachoRecipeButton = document.getElementById('nacho-recipe-button');
     var nachoRecipeShowHide = document.getElementById('nacho-recipe-showhide');
 
+    nachoRecipeShowHide.style.display = 'none';
+
     if (nachoRecipeShowHide.style.display === 'none') {
         nachoRecipeButton.textContent ='Hide Recipe';
         nachoRecipeShowHide.style.display ='block';
@@ -85,6 +94,8 @@ function stuffedShrimpClicker(){
     var stuffedShrimpRecipeButton = document.getElementById('stuffed-shrimp-recipe-button');
     var stuffedShrimpRecipeShowHide = document.getElementById('stuffed-shrimp-recipe-showhide');
 
+    stuffedShrimpRecipeShowHide.style.display = 'none';
+
     if (stuffedShrimpRecipeShowHide.style.display === 'none') {
         stuffedShrimpRecipeButton.textContent ='Hide Recipe';
         stuffedShrimpRecipeShowHide.style.display ='block';
@@ -99,6 +110,8 @@ function crostiniClicker(){
 
     var crostiniRecipeButton = document.getElementById('crostini-recipe-button');
     var crostiniRecipeShowHide = document.getElementById('crostini-recipe-showhide');
+
+    crostiniRecipeShowHide.style.display = 'none';
 
     if (crostiniRecipeShowHide.style.display === 'none') {
         crostiniRecipeButton.textContent ='Hide Recipe';
@@ -116,6 +129,8 @@ function porkMarsalaClicker(){
     var porkMarsalaRecipeButton = document.getElementById('pork-marsala-recipe-button');
     var porkMarsalaRecipeShowHide = document.getElementById('pork-marsala-recipe-showhide');
 
+    porkMarsalaRecipeShowHide.style.display = 'none';
+
     if (porkMarsalaRecipeShowHide.style.display === 'none') {
         porkMarsalaRecipeButton.textContent ='Hide Recipe';
         porkMarsalaRecipeShowHide.style.display ='block';
@@ -130,6 +145,8 @@ function thaiCoconutShrimpClicker(){
 
     var thaiCoconutShrimpRecipeButton = document.getElementById('thai-coconut-shrimp-recipe-button');
     var thaiCoconutShrimpRecipeShowHide = document.getElementById('thai-coconut-shrimp-recipe-showhide');
+
+    thaiCoconutShrimpRecipeShowHide.style.display = 'none';
 
     if (thaiCoconutShrimpRecipeShowHide.style.display === 'none') {
         thaiCoconutShrimpRecipeButton.textContent ='Hide Recipe';
@@ -146,6 +163,8 @@ function savoryChickenClicker(){
     var savoryChickenRecipeButton = document.getElementById('savory-chicken-recipe-button');
     var savoryChickenRecipeShowHide = document.getElementById('savory-chicken-recipe-showhide');
 
+    savoryChickenRecipeShowHide.style.display = 'none';
+
     if (savoryChickenRecipeShowHide.style.display === 'none') {
         savoryChickenRecipeButton.textContent ='Hide Recipe';
         savoryChickenRecipeShowHide.style.display ='block';
@@ -160,6 +179,8 @@ function cucumberSaladClicker(){
 
     var cucumberSaladRecipeButton = document.getElementById('cucumber-salad-recipe-button');
     var cucumberSaladRecipeShowHide = document.getElementById('cucumber-salad-recipe-showhide');
+
+    cucumberSaladRecipeShowHide.style.display = 'none';
 
     if (cucumberSaladRecipeShowHide.style.display === 'none') {
         cucumberSaladRecipeButton.textContent ='Hide Recipe';
@@ -176,6 +197,8 @@ function asparagusLemonRecipeClicker(){
     var asparagusLemonRecipeButton = document.getElementById('asparagus-lemon-recipe-button');
     var asparagusLemonRecipeShowHide = document.getElementById('asparagus-lemon-recipe-showhide');
 
+    asparagusLemonRecipeShowHide.style.display = 'none';
+
     if (asparagusLemonRecipeShowHide.style.display === 'none') {
         asparagusLemonRecipeButton.textContent ='Hide Recipe';
         asparagusLemonRecipeShowHide.style.display ='block';
@@ -190,6 +213,8 @@ function grilledCarrotRecipeClicker(){
 
     var grilledCarrotRecipeButton = document.getElementById('grilled-carrot-recipe-button');
     var grilledCarrotRecipeShowHide = document.getElementById('grilled-carrot-recipe-showhide');
+
+    grilledCarrotRecipeShowHide.style.display = 'none';
 
     if (grilledCarrotRecipeShowHide.style.display === 'none') {
         grilledCarrotRecipeButton.textContent ='Hide Recipe';
@@ -206,6 +231,8 @@ function pumpkinSpiceRecipeClicker(){
     var pumpkinSpiceRecipeButton = document.getElementById('pumpkin-spice-recipe-button');
     var pumpkinSpiceRecipeShowHide = document.getElementById('pumpkin-spice-recipe-showhide');
 
+    pumpkinSpiceRecipeShowHide.style.display = 'none';
+
     if (pumpkinSpiceRecipeShowHide.style.display === 'none') {
         pumpkinSpiceRecipeButton.textContent ='Hide Recipe';
         pumpkinSpiceRecipeShowHide.style.display ='block';
@@ -221,6 +248,8 @@ function cinnamonFrostingRecipeClicker(){
     var cinnamonFrostingRecipeButton = document.getElementById('cinnamon-frosting-recipe-button');
     var cinnamonFrostingRecipeShowHide = document.getElementById('cinnamon-frosting-recipe-showhide');
 
+    cinnamonFrostingRecipeShowHide.style.display = 'none';
+
     if (cinnamonFrostingRecipeShowHide.style.display === 'none') {
         cinnamonFrostingRecipeButton.textContent ='Hide Recipe';
         cinnamonFrostingRecipeShowHide.style.display ='block';
@@ -235,6 +264,8 @@ function browniesRecipeClicker(){
 
     var browniesRecipeButton = document.getElementById('brownies-recipe-button');
     var browniesRecipeShowHide = document.getElementById('brownies-recipe-showhide');
+
+    browniesRecipeShowHide.style.display = 'none';
 
     if (browniesRecipeShowHide.style.display === 'none') {
         browniesRecipeButton.textContent ='Hide Recipe';
