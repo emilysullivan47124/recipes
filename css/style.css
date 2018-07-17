@@ -132,7 +132,7 @@ header > p {
 @media (min-width: 769px) {
     /*Header*/
     .main-header {
-        display: inline-block;
+        /* display: inline-block; */
         vertical-align: top;
         padding-left: 1 em;
         padding-right: 1 em; 
@@ -157,18 +157,7 @@ header > p {
         width: 100%;
     }
 
-    #nav-img {
-        background-color: #e86e51;
-        display: inline;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        margin-top: 1.5em;
-        margin-right: 1.5em;
-        margin-bottom: 2em;
-        float: right;
 
-    }
     /*Body*/
     .clearfix :: after {
         content: " ";
